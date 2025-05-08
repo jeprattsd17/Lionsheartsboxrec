@@ -21,15 +21,26 @@
       font-weight: bold;
     }
 
-    h1 {
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    .logo h1 {
       font-size: 48px;
       font-weight: bold;
-      color: black;
-      background: linear-gradient(to right, red, black);
+      background: linear-gradient(to right, gold, black);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
-      margin-bottom: 30px;
+      margin: 0;
     }
 
     table {
@@ -48,6 +59,14 @@
     th {
       background-color: #ddd;
     }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 20px;
+      color: gold;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -59,8 +78,11 @@
     <a href="rankings.html">Rankings</a>
   </nav>
 
-  <!-- Logo Title -->
-  <h1>BOXING RECORDS</h1>
+  <!-- Logo with Image and Title -->
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Boxing_glove_icon.svg" alt="Boxing Glove">
+    <h1>BOXING RECORDS</h1>
+  </div>
 
   <!-- Fighter Table -->
   <table>
@@ -105,6 +127,9 @@
       <td>Lightweight</td>
     </tr>
   </table>
+
+  <!-- Footer -->
+  <footer>Lions Hearts BoxRec</footer>
 
 </body>
 </html>
