@@ -5,8 +5,9 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      background: linear-gradient(to right, red, blue);
       padding: 20px;
+      color: white;
     }
 
     nav {
@@ -16,17 +17,26 @@
     nav a {
       margin-right: 15px;
       text-decoration: none;
-      color: blue;
+      color: yellow;
+      font-weight: bold;
     }
 
     h1 {
-      color: #222;
+      font-size: 48px;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(to right, red, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
       background: white;
+      color: black;
     }
 
     th, td {
@@ -49,8 +59,10 @@
     <a href="rankings.html">Rankings</a>
   </nav>
 
-  <h1>Boxing Records</h1>
+  <!-- Logo Title -->
+  <h1>BOXING RECORDS</h1>
 
+  <!-- Fighter Table -->
   <table>
     <tr>
       <th>Name</th>
